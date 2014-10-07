@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var b = require('bonescript');
+
+//read GPIO
+var alert = 'P9_21';
+b.pinMode(alert, b.INPUT, 7, 'pullup');
+state = b.digitalRead(alert);
+console.log('alert state =' + state);
+//interrupt
+b.attachInterrupt(alert, false, b.CHANGE, printStatus);
+
+function printStatus(x) {
+	console.log('x.value = ' + x.value);
+}
