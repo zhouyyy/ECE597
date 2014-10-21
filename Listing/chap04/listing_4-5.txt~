@@ -1,0 +1,11 @@
+Listing 4-5 autoconf.h
+
+This listing does not 
+
+#define CONFIG_USB_HID 1
+#define CONFIG_USB_STORAGE 1
+#define CONFIG_USB_SUPPORT 1
+#define CONFIG_USB_EHCI_HCD 1
+#define CONFIG_USB_OHCI_LITTLE_ENDIAN 1
+#define CONFIG_USB_ARCH_HAS_HCD 1
+#define CONFIG_USB 1
