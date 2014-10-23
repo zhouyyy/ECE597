@@ -1,0 +1,12 @@
+Lisitng 5-1 Kernel Build Sequence
+
+This listing contains part of the kernel build sequence obtained by running /tools/rebuild.sh. 
+
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' is up to date.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+  Kernel: arch/arm/boot/Image is ready
+  Kernel: arch/arm/boot/zImage is ready
